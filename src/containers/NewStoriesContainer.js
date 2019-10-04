@@ -15,7 +15,10 @@ const NewStoriesContainer = () => {
     && newStories.map((storyId) => <Story key={storyId} storyId={storyId} />);
 
   return (
-    <div>{storyList}</div>
+    <>
+      <h1>New Stories</h1>
+      <div>{storyList}</div>
+    </>
   );
 };
 

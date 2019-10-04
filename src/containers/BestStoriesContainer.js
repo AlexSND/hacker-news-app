@@ -15,7 +15,10 @@ const BestStoriesContainer = () => {
     && bestStories.map((storyId) => <Story key={storyId} storyId={storyId} />);
 
   return (
-    <div>{storyList}</div>
+    <>
+      <h1>Best Stories</h1>
+      <div>{storyList}</div>
+    </>
   );
 };
 

@@ -15,7 +15,10 @@ const TopStoriesContainer = () => {
     && topStories.map((storyId) => <Story key={storyId} storyId={storyId} />);
 
   return (
-    <div>{storyList}</div>
+    <>
+      <h1>Top Stories</h1>
+      <div>{storyList}</div>
+    </>
   );
 };
 
