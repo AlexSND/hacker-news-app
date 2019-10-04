@@ -1,18 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { getTopStories } from './services/hackerNewsAPI';
+import React from 'react';
+import TopStoriesContainer from './containers/TopStoriesContainer';
 
-const App = () => {
-  const [topStories, setTopStories] = useState([]);
-
-  useEffect(() => {
-    getTopStories().then((data) => {
-      setTopStories(data);
-    });
-  });
-
-  return (
-    <p>{JSON.stringify(topStories)}</p>
-  );
-};
+const App = () => <TopStoriesContainer />;
 
 export default App;
