@@ -1,6 +1,6 @@
 const selectFields = ({
   id, by, title, time, url,
-}) => ({
+} = {}) => ({
   id, by, title, time, url,
 });
 
